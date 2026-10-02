@@ -1,5 +1,5 @@
 from textnode import TextNode, TextType
-from src.block import block_to_blocktype, BlockType
+from block import block_to_blocktype, BlockType
 from parentnode import ParentNode
 import re
 

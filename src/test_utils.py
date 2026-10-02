@@ -272,4 +272,11 @@ class TestUtils(unittest.TestCase):
             "- This is a list\n- with items",
         ],
     )
-        
+
+    def test_extract_title(self):
+        md = """
+# This is a title
+This is a paragraph
+"""
+        title = extract_title(md)
+        self.assertEqual(title, "This is a title")    
